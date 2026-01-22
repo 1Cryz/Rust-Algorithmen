@@ -34,7 +34,7 @@ pub fn sieve_single(limit: usize) -> Vec<usize> {
 }
 
 /// Multithreaded-Variante mit `thread::spawn`.
-/// Vorgehen: Basis-Primzahlen bis sqrt(limit) bestimmen und anschließend
+/// Vorgehen: Basis-Primzahlen bis sqrt(limit) bestimmen und anschliessend
 /// den Wertebereich in Blöcke aufteilen. Jeder Thread markiert sein Segment.
 pub fn sieve_threaded(limit: usize, threads: usize) -> Vec<usize> {
     if limit < 2 {

@@ -6,14 +6,14 @@ pub fn bubble_sort(values: &mut [i32]) {
 
     while swapped {
         swapped = false;
-        // Jede Runde schiebt das größte Element ans Ende.
+        // Jede Runde schiebt das grösste Element ans Ende.
         for i in 1..n {
             if values[i - 1] > values[i] {
                 values.swap(i - 1, i);
                 swapped = true;
             }
         }
-        // Nach jeder Runde ist das größte Element hinten korrekt.
+        // Nach jeder Runde ist das grösste Element hinten korrekt.
         n = n.saturating_sub(1);
     }
 }
