@@ -28,19 +28,28 @@ Liste aller Primzahlen bis zum angegebenen Grenzwert.
 - **`sieve-async`**: Ausführung in einem `async`-Block (async/await).
 
 ### Bubble Sort
-Vergleicht benachbarte Elemente und vertauscht sie bei Bedarf. Mehrere Durchläufe
-schieben schrittweise die grössten Elemente nach hinten.
+Beim Bubble Sort werden immer zwei benachbarte Elemente miteinander verglichen.
+Wenn sie in der falschen Reihenfolge sind, werden sie vertauscht.
+Dieser Vorgang wird mehrmals wiederholt, bis alles richtig sortiert ist.
+Dabei wandern die grössten Elemente Schritt für Schritt nach hinten.
 
 ### Quick Sort
-Wählt ein Pivot-Element, partitioniert die Liste (kleiner links, grösser rechts)
-und sortiert die Teilbereiche rekursiv.
+Beim Quick Sort wird zuerst ein Element ausgewählt, mit dem die anderen verglichen werden.
+Alle kleineren Elemente kommen auf die linke Seite und alle grösseren auf die rechte Seite.
+Danach werden die beiden Seiten auf die gleiche Weise weiter sortiert.
+So wird die Liste nach und nach geordnet.
 
 ### Merge Sort
-Teilt die Liste rekursiv in Hälften, sortiert jede Hälfte und führt sie danach
-wieder zusammen (Merge-Schritt).
+Beim Merge Sort wird die Liste immer wieder in zwei Hälften geteilt.
+Das passiert so lange, bis nur noch einzelne Elemente übrig sind.
+Anschliessend werden diese Elemente wieder zusammengeführt.
+Dabei werden sie direkt in der richtigen Reihenfolge zusammengesetzt.
 
 ### Binary Search
-Sucht in einer **sortierten** Liste durch wiederholtes Halbieren des Suchbereichs.
+Bei der Binary Search wird in einer bereits sortierten Liste gesucht.
+Zuerst wird das mittlere Element angeschaut.
+Je nachdem, ob das gesuchte Element grösser oder kleiner ist, wird nur noch in einer Hälfte weitergesucht.
+Dieser Vorgang wiederholt sich, bis das gesuchte Element gefunden wurde oder nicht existiert.
 
 ## CLI Usage
 
